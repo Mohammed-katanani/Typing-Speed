@@ -1,0 +1,133 @@
+:root {
+  --mainColor: #6a832e;
+  --sucndColor: #45ced2;
+}
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eee;
+}
+.title {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 45px;
+  font-weight: bolder;
+  color: #fff;
+  /* border-radius: 8px; */
+  background-color: var(--sucndColor);
+}
+.captain,
+.start,
+.text,
+.contener-word,
+.footer,
+.level {
+  width: 90%;
+  margin: 10px auto;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 8px;
+  background-color: #fff;
+}
+.captain span {
+  color: var(--mainColor);
+}
+.captain span::before {
+  content: " [ ";
+}
+.captain span::after {
+  content: " ] ";
+}
+.start {
+  background-color: var(--mainColor);
+  color: #fff;
+  font-size: 35px;
+  cursor: pointer;
+  opacity: 0.85;
+  transition: ease-in 0.5s;
+}
+.start:hover {
+  background-color: var(--mainColor);
+  opacity: 1;
+}
+.text {
+  border: 1px solid var(--sucndColor);
+  margin: 0 5%;
+  caret-color: var(--sucndColor);
+}
+.text:focus {
+  outline: none;
+}
+.contener-word,
+.level {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  gap: 10px;
+}
+.contener-word div {
+  background-color: var(--sucndColor);
+  color: #fff;
+  padding: 5px;
+  border-radius: 4px;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+.footer div {
+  margin: 0 15px;
+}
+.footer div span {
+  color: var(--mainColor);
+}
+.show {
+  color: var(--sucndColor);
+  font-size: 50px;
+  font-weight: bolder;
+  text-align: center;
+  padding: 20px;
+}
+.bad {
+  text-align: center;
+  color: red;
+  font-size: 60px;
+  font-weight: bolder;
+  margin-top: 40px;
+}
+.good {
+  text-align: center;
+  color: var(--mainColor);
+  font-size: 60px;
+  font-weight: bolder;
+  margin-top: 40px;
+}
+
+.level div {
+  background-color: var(--mainColor);
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.5s;
+}
+.level {
+  outline: none;
+  border: 5px solid var(--mainColor);
+  font-size: 25px;
+  color: #6a832e;
+}
+.level option {
+  color: #6a832e;
+  font-size: 25px;
+}
